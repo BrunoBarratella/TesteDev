@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
 :root{
     --bg: #635985;
     --tela-cadastro: #18122B;
     --branco:#FFFFFF;
     --roxo-medio: #393053;
+    --fonte: 'Montserrat', sans-serif;
 }
 
 body{
     background: var(--bg);
     color: var(--branco);
+    font-family: var(--fonte);
 }
 
 .container{
