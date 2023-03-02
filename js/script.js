@@ -3,6 +3,7 @@ const Mostra = document.querySelector(".MostraNum")
 const lista = document.getElementById("lista")
 const cadastraUsuario = document.querySelector(".container-cadastro-usuario")
 
+
 function Conta100 (i) {
 for (var i = 1; i <= 100; i++){
     var valor = 0
@@ -11,7 +12,7 @@ for (var i = 1; i <= 100; i++){
     }else{
         valor=i
     }
-    criaElemento(valor)
+    criaElemento(valor, lista)
 }
 }
 
@@ -21,12 +22,16 @@ ListaNum.addEventListener("click", () =>{
     Conta100();
 })
 
-export function criaElemento (valor){
+function criaElemento (objeto, lista){
+
     const novoItem = document.createElement("li")
     novoItem.classList.add("item")
 
-    novoItem.innerHTML += valor
+    novoItem.innerHTML += objeto
 
     lista.appendChild(novoItem);
+    // console.log(valor)
+
+
 }
 

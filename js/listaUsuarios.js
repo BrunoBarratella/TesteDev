@@ -1,6 +1,7 @@
-import { criaElemento } from "./mostraNum";
-
 const envia = document.querySelector(".adiciona")
+const tabela = document.querySelector("#tabela-de-usuarios")
+const listarUsuarios = document.querySelector(".listaUsuario")
+const tabelaUsuarios = document.querySelector(".tabela-usuarios")
 
 envia.addEventListener("submit", (evento) => {
     evento.preventDefault()
@@ -12,10 +13,27 @@ envia.addEventListener("submit", (evento) => {
 
 
     const atual = {
-    "nome": nome.value, 
-    "apelido": apelido.value
+        "nome": nome.value,
+        "apelido": apelido.value
     }
 
-    console.log(atual)
+    criaElemento2(atual, tabela);
 
 })
+
+listarUsuarios.addEventListener("click", () => {
+    tabelaUsuarios.style.display = "flex"
+})
+
+function criaElemento2(objeto, tabela) {
+
+    const { nome, apelido } = objeto;
+    const novoItem = document.createElement("li")
+    novoItem.classList.add("item")
+
+    novoItem.innerHTML += "Nome: " + nome + " <br> " + "Apelido: " + apelido
+    novoItem.innerHTML += "<hr></hr>"
+
+    tabela.appendChild(novoItem);
+
+}
