@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,49 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
     <main class="container">
-    <div class="container-cadastro-usuario">
-        <div class="cadastro-usuario">
-            <h1 class="Cadastro">Cadastro de Usuario</h1>
-            <label for="nomeUsuario">Nome</label>
-            <input type="text" name="nomeUsuario">
+        <div class="container-cadastro-usuario">
+            <div class="cadastro-usuario">
+                <h1 class="Cadastro">Cadastro de Usuario</h1>
+                <form class="adiciona">
+                    <label for="nomeUsuario">Nome</label>
+                    <input type="text" name="nomeUsuario" id="nome">
 
-            <label for="emailUsuario">E-mail</label>
-            <input type="email" name="emailUsuario">
+                    <label for="emailUsuario">E-mail</label>
+                    <input type="email" name="emailUsuario" id="e-mail">
 
-            <label for="apelidoUsuario">Apelido</label>
-            <input type="text" name="apelidoUsuario">
+                    <label for="apelidoUsuario">Apelido</label>
+                    <input type="text" name="apelidoUsuario" id="apelido">
 
-            <label for="senhaUsuario">Senha</label>
-            <input type="password" name="senhaUsuario">
-            <button class="listaUsuario">Listar Usuarios</button>
+                    <label for="senhaUsuario">Senha</label>
+                    <input type="password" name="senhaUsuario" id="senha">
+
+                    <input type="submit" value="Adicionar" class="cadastrar" id="cadastrar">
+                </form>
+
+                <button class="listaUsuario">Listar Usuarios</button>
+            </div>
         </div>
-        
-    </div>
-</main>
+        <div class="contaAte100">
+            <input type="checkbox" name="btn" class="btn-num">
+            <label for="btn" class="btn-numeros">Listar Numeros</label>
+            <!-- <button class="btn-numeros">Listar Numeros</button> -->
+            <div class="containerContador">
+                <h2>Numeros de 1 a 100</h2>
+            </div>
+        </div>
+        <div class="MostraNum">
+            <ul id="tabelaUsuarios">
+
+            </ul>
+        </div>
+
+        <div class="lista"></div>
+    </main>
+    <script src="./js/mostraNum.js"></script>
+    <script src="./js/listaUsuarios.js"></script>
 </body>
+
 </html>

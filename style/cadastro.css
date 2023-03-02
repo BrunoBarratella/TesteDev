@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.container-cadastro-usuario{
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px var(--roxo-medio);
+    border-top: 1px solid var(--branco);
+    border-left: 1px solid var(--branco);
+    display: flex;
+    padding: 2em;
+    background-color: var(--tela-cadastro);
+    width: 500px;
+    position: absolute;
+    top: 18%;
+}
+
+.cadastro-usuario{
+    width: 100%;
+}
+
+.Cadastro{
+    font-size: 30px;
+    padding: 1em;
+}
+
+input{
+    display: flex;
+    margin-top: 1em;
+    justify-content: flex-start;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--branco);
+    width: 50%;
+    color: var(--branco);
+}
+
+label{
+    border-radius: 15px;
+    display: flex;
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+
+.cadastrar{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background: none;
+    border: none;
+    color: var(--branco);
+    background-color: var(--roxo-medio);
+    box-shadow: 3px 3px 10px var(--bg);
+    border-top: 1px solid var(--tela-cadastro);
+    border-left: 1px solid var(--tela-cadastro);
+    border-radius: 10px;
+    position: absolute;
+    width: 120px;
+    top: 70%;
+    right: 13%;
+    cursor: pointer;
+}
+
+.listaUsuario{
+    padding: 1em;
+    background: none;
+    border: none;
+    color: var(--branco);
+    background-color: var(--roxo-medio);
+    box-shadow: 3px 3px 10px var(--bg);
+    border-top: 1px solid var(--tela-cadastro);
+    border-left: 1px solid var(--tela-cadastro);
+    border-radius: 10px;
+    position: absolute;
+    width: 120px;
+    top: 30%;
+    right: 13%;
+    cursor: pointer;
+}

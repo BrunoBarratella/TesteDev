@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+@import url("./cadastro.css");
+@import url("./listaNumeros.css");
 
 :root{
     --bg: #635985;
@@ -12,64 +14,4 @@ body{
     background: var(--bg);
     color: var(--branco);
     font-family: var(--fonte);
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-}
-
-.container-cadastro-usuario{
-    border-radius: 15px;
-    box-shadow: 15px 15px 20px var(--roxo-medio);
-    display: flex;
-    padding: 2em;
-    background-color: var(--tela-cadastro);
-    width: 500px;
-    position: absolute;
-    top: 15%;
-}
-
-.cadastro-usuario{
-    width: 100%;
-}
-
-.Cadastro{
-    font-size: 30px;
-    padding: 1em;
-}
-
-input{
-    display: flex;
-    margin-top: 1em;
-    justify-content: flex-start;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #FFFFFF;
-    width: 50%;
-}
-
-label{
-    border-radius: 15px;
-    display: flex;
-    margin-top: 1.5em;
-    margin-left: 2em;
-}
-
-.listaUsuario{
-    padding: 1em;
-    background: none;
-    border: none;
-    color: var(--branco);
-    background-color: var(--roxo-medio);
-    box-shadow: 3px 3px 10px var(--bg);
-    border-top: 1px solid var(--tela-cadastro);
-    border-left: 1px solid var(--tela-cadastro);
-    border-radius: 10px;
-    position: absolute;
-    top: 60%;
-    right: 13%;
-    cursor: pointer;
 }
